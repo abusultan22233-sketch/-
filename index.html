@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>منصة النور لتفسير الرؤى</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: 'Tahoma', sans-serif;
+    }
+    .navbar-brand {
+      color: #b30000;
+      font-weight: bold;
+    }
+    .hero {
+      background-color: #fff;
+      padding: 3rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .hero img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+    section {
+      margin-top: 2rem;
+      padding: 2rem;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    footer {
+      background-color: #222;
+      color: #eee;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .contact-icon img {
+      width: 20px;
+      margin-left: 8px;
+    }
+    .contact-icon {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin: 0.5rem;
+      background-color: #444;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">منصة النور لتفسير الرؤى</a>
+      <div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">من أنا</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">الخدمات</a></li>
+          <li class="nav-item"><a class="nav-link" href="#form">أرسل رؤياك</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">للتواصل</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <img src="Screenshot 2025-07-18 230029.png" alt="صورة الشيخ" />
+    <p>مرحبًا بكم في منصة النور لتفسير الرؤى، حيث الفهم العميق والتأويل الراشد بأسلوب شرعي وتربوي.</p>
+  </div>
+
+  <div class="container">
+    <section id="about">
+      <h2 class="text-danger">من أنا</h2>
+      <p>أنا مؤسس هذه المنصة، أقدّم تفسيرًا علميًّا مدروسًا للرؤى مبنيًّا على فهم الكتاب والسنة، واطلاع على المدارس القديمة والحديثة في التأويل، بأسلوب متزن يراعي النفس والشرع.</p>
+    </section>
+
+    <section id="services">
+      <h2 class="text-danger">الخدمات</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">تفسير فردي للرؤى وفق حالتك النفسية والاجتماعية.</li>
+        <li class="list-group-item">تمييز بين الرؤيا وحديث النفس والشيطان.</li>
+        <li class="list-group-item">دلالات سلوكية وروحية في ضوء التأويل.</li>
+        <li class="list-group-item">سرية تامة واحترام خصوصيتك.</li>
+      </ul>
+    </section>
+
+    <section id="form">
+      <h2 class="text-danger">أرسل رؤياك</h2>
+      <form>
+        <div class="mb-3">
+          <label for="vision" class="form-label">نص الرؤيا</label>
+          <textarea class="form-control" id="vision" name="vision" rows="4"></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="status" class="form-label">العمر والحالة الاجتماعية</label>
+          <input type="text" class="form-control" id="status" name="status">
+        </div>
+        <label class="form-label">خيارات الاشتراك</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="package" value="30" id="option1">
+          <label class="form-check-label" for="option1">رؤيا واحدة بـ 30 ريال</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="package" value="100" id="option2">
+          <label class="form-check-label" for="option2">اشتراك شهري بـ 100 ريال</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="package" value="free" id="option3">
+          <label class="form-check-label" for="option3">رؤيا مجانية بشرط مشاركة المنصة</label>
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="notes" class="form-label">ملاحظات إضافية</label>
+          <textarea class="form-control" id="notes" name="notes" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">البريد الإلكتروني</label>
+          <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <button type="submit" class="btn btn-primary">إرسال</button>
+      </form>
+    </section>
+  </div>
+
+  <footer id="contact">
+    <a class="contact-icon" href="mailto:abusultan22233@gmail.com" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email"> 
+      abusultan22233@gmail.com
+    </a>
+    <a class="contact-icon" href="https://wa.me/966530476639" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+      0530476639 واتساب
+    </a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
